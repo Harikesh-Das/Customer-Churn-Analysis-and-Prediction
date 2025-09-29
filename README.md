@@ -2,6 +2,18 @@
 
 This project analyzes customer churn data from a telecommunications company and builds predictive models to identify at-risk customers.
 
+## 🎯 **Quick Results Overview**
+
+| Metric | Value |
+|--------|-------|
+| **Best Model** | Gradient Boosting |
+| **F1-Score** | 0.5770 |
+| **Accuracy** | 79.91% |
+| **Churn Rate** | 26.54% |
+| **Dataset Size** | 7,043 customers |
+
+**Key Insight**: Month-to-month contract customers have a 42.7% churn rate, making them the highest risk segment.
+
 ## Project Overview
 
 The project aims to:
@@ -90,37 +102,56 @@ The script generates multiple visualization files:
 ### 📊 **Generated Visualizations**
 
 #### 1. Feature Analysis
-- **`feature_importance.png`** - Top 10 most important features for churn prediction
-  - Shows feature importance scores from Random Forest analysis
-  - Helps identify key factors driving customer churn
+**Top 10 Most Important Features**
+![Feature Importance](feature_importance.png)
+*Shows feature importance scores from Random Forest analysis to identify key factors driving customer churn*
 
 #### 2. Model Performance Analysis
-- **`model_performance.png`** - Comprehensive model comparison chart
-  - Bar chart comparing all models across multiple metrics
-  - Shows Accuracy, Precision, Recall, F1-Score, and ROC-AUC
 
-- **`confusion_matrix.png`** - Confusion matrix for the best performing model
-  - Visual representation of true vs predicted classifications
-  - Shows model performance on test data
+**Model Performance Comparison**
+![Model Performance](model_performance.png)
+*Bar chart comparing all models across multiple metrics (Accuracy, Precision, Recall, F1-Score, and ROC-AUC)*
 
-- **`roc_curves.png`** - ROC curves for all models
-  - Compares model performance across different thresholds
-  - Shows trade-off between true positive rate and false positive rate
+**Confusion Matrix - Best Model (Gradient Boosting)**
+![Confusion Matrix](confusion_matrix.png)
+*Visual representation of true vs predicted classifications showing model performance on test data*
 
-- **`best_model_features.png`** - Feature importance for the best model
-  - Shows which features the best model considers most important
-  - Helps understand model decision-making process
+**ROC Curves Comparison**
+![ROC Curves](roc_curves.png)
+*Compares model performance across different thresholds showing trade-off between true positive rate and false positive rate*
+
+**Best Model Feature Importance**
+![Best Model Features](best_model_features.png)
+*Shows which features the best model (Gradient Boosting) considers most important for decision-making*
 
 #### 3. Legacy Visualization
-- **`model_evaluation.png`** - Combined evaluation dashboard (legacy)
-  - Multi-panel visualization with all evaluation metrics
-  - Comprehensive overview of model performance
+**Combined Evaluation Dashboard**
+![Model Evaluation](model_evaluation.png)
+*Multi-panel visualization with all evaluation metrics providing comprehensive overview of model performance*
 
 ### 📈 **Console Output**
 - Detailed analysis results and metrics
 - Business insights and recommendations
 - Model performance statistics
 - Data preprocessing information
+
+### 🖼️ **Visual Gallery**
+
+<div align="center">
+
+| Feature Analysis | Model Performance |
+|:---:|:---:|
+| ![Feature Importance](feature_importance.png) | ![Model Performance](model_performance.png) |
+
+| Confusion Matrix | ROC Curves |
+|:---:|:---:|
+| ![Confusion Matrix](confusion_matrix.png) | ![ROC Curves](roc_curves.png) |
+
+| Best Model Features | Combined Dashboard |
+|:---:|:---:|
+| ![Best Model Features](best_model_features.png) | ![Model Evaluation](model_evaluation.png) |
+
+</div>
 
 ### 📁 **Generated Files List**
 ```

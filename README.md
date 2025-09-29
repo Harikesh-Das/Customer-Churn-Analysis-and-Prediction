@@ -177,13 +177,8 @@ roc_curves.png             (160KB)  - ROC curves comparison
   - Tenure (15.4% importance)
   - Contract type (8.0% importance)
 
-## Recommendations
 
-1. Focus retention efforts on month-to-month contract customers
-2. Implement early intervention programs for new customers
-3. Monitor customers with high monthly charges
-4. Use the trained model for proactive customer identification
-5. Develop targeted retention strategies for high-risk segments
+
 
 
 

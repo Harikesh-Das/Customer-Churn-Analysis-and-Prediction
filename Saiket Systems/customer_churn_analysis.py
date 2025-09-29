@@ -371,13 +371,7 @@ class CustomerChurnAnalyzer:
         print("\n3. Monthly Charges Analysis:")
         print(churn_charges)
         
-        print("\nRecommendations:")
-        print("-" * 20)
-        print("1. Focus on month-to-month contract customers - they have the highest churn rate")
-        print("2. Pay attention to customers with tenure less than 12 months")
-        print("3. Monitor customers with high monthly charges")
-        print("4. Implement retention strategies for high-risk customer segments")
-        print("5. Use the trained model to identify at-risk customers proactively")
+        
     
     def run_complete_analysis(self):
         """Run the complete analysis pipeline."""
@@ -442,5 +436,6 @@ def main():
 
 if __name__ == "__main__":
     analyzer, best_model, results = main()
+
 
 

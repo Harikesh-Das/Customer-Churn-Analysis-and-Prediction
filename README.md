@@ -121,7 +121,7 @@ The script generates multiple visualization files:
 *Compares model performance across different thresholds showing trade-off between true positive rate and false positive rate*
 
 **Best Model Feature Importance**
-![Best Model Features](best_model_features.png)
+![Best Model Features](Saiket Systems/best_model_features.png)
 *Shows which features the best model (Gradient Boosting) considers most important for decision-making*
 
 #### 3. Legacy Visualization

@@ -2,7 +2,7 @@
 
 This project analyzes customer churn data from a telecommunications company and builds predictive models to identify at-risk customers.
 
-## 🎯 **Quick Results Overview**
+##  **Quick Results Overview**
 
 | Metric | Value |
 |--------|-------|

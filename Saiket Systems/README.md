@@ -2,7 +2,7 @@
 
 This project analyzes customer churn data from a telecommunications company and builds predictive models to identify at-risk customers.
 
-## 🎯 **Quick Results Overview**
+## **Quick Results Overview**
 
 | Metric | Value |
 |--------|-------|
@@ -176,6 +176,7 @@ roc_curves.png             (160KB)  - ROC curves comparison
   - MonthlyCharges (17.9% importance) 
   - Tenure (15.4% importance)
   - Contract type (8.0% importance)
+
 
 
 

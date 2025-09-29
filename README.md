@@ -85,22 +85,67 @@ The script will:
 
 ## Output
 
-The script generates:
-- `feature_importance.png` - Feature importance visualization
-- `model_evaluation.png` - Model comparison and evaluation charts
-- Console output with detailed analysis and recommendations
+The script generates multiple visualization files:
+
+### 📊 **Generated Visualizations**
+
+#### 1. Feature Analysis
+- **`feature_importance.png`** - Top 10 most important features for churn prediction
+  - Shows feature importance scores from Random Forest analysis
+  - Helps identify key factors driving customer churn
+
+#### 2. Model Performance Analysis
+- **`model_performance.png`** - Comprehensive model comparison chart
+  - Bar chart comparing all models across multiple metrics
+  - Shows Accuracy, Precision, Recall, F1-Score, and ROC-AUC
+
+- **`confusion_matrix.png`** - Confusion matrix for the best performing model
+  - Visual representation of true vs predicted classifications
+  - Shows model performance on test data
+
+- **`roc_curves.png`** - ROC curves for all models
+  - Compares model performance across different thresholds
+  - Shows trade-off between true positive rate and false positive rate
+
+- **`best_model_features.png`** - Feature importance for the best model
+  - Shows which features the best model considers most important
+  - Helps understand model decision-making process
+
+#### 3. Legacy Visualization
+- **`model_evaluation.png`** - Combined evaluation dashboard (legacy)
+  - Multi-panel visualization with all evaluation metrics
+  - Comprehensive overview of model performance
+
+### 📈 **Console Output**
+- Detailed analysis results and metrics
+- Business insights and recommendations
+- Model performance statistics
+- Data preprocessing information
+
+### 📁 **Generated Files List**
+```
+best_model_features.png      (61KB)  - Best model feature importance
+confusion_matrix.png         (44KB)  - Confusion matrix visualization  
+feature_importance.png      (116KB)  - Top 10 feature importance
+model_evaluation.png        (459KB)  - Legacy combined dashboard
+model_performance.png        (75KB)  - Model comparison chart
+roc_curves.png             (160KB)  - ROC curves comparison
+```
 
 ## Key Findings
 
-- Month-to-month contracts have the highest churn rate
-- Customers with tenure less than 12 months are at higher risk
-- High monthly charges correlate with increased churn
-- The Random Forest model typically performs best for this dataset
+- **Best Model**: Gradient Boosting with F1-Score of 0.5770
+- **Churn Rate**: 26.54% of customers churn
+- **Key Risk Factors**:
+  - Month-to-month contracts have the highest churn rate (42.7%)
+  - Customers with tenure less than 12 months are at higher risk (47.7% churn rate)
+  - High monthly charges correlate with increased churn
+- **Top Important Features**:
+  - TotalCharges (18.7% importance)
+  - MonthlyCharges (17.9% importance) 
+  - Tenure (15.4% importance)
+  - Contract type (8.0% importance)
 
-## Recommendations
 
-1. Focus retention efforts on month-to-month contract customers
-2. Implement early intervention programs for new customers
-3. Monitor customers with high monthly charges
-4. Use the trained model for proactive customer identification
-5. Develop targeted retention strategies for high-risk segments
+
+
